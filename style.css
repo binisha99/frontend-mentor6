@@ -7,6 +7,18 @@
 	--gradient-blue: hsl(240, 73%, 65%);
 	--divider-blue: hsl(240, 5%, 91%);
 }
+
+html {
+	box-sizing: initial;
+	font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;
@@ -19,18 +31,14 @@ body {
 	color: var(--text-blue);
 }
 
-h2,h3 {
+h1,
+h2,
+h3 {
 	margin-top: 0;
-}
-h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-	margin-top: -44px;
 }
 
 .card {
-	background: white;
+	background: #ffffff;
 	border-radius: 2rem;
 	max-width: 56rem;
 	padding: 2.875rem 1.5rem;
@@ -41,33 +49,27 @@ h1{
 }
 
 .card__box {
-	/* display: none; */
-	position: fixed;
-    top: 112px;
-    left: 22px;
-    height: 117px;
-    z-index: 1;
-
+	display: none;
 }
 
 .card__image {
 	position: relative;
 }
 
-.woman {
-	position: fixed;
-    top: 2.2rem;
+.card__image img {
+	position: absolute;
+	top: -6.8rem;
 	left: 50%;
 	transform: translateX(-50%);
 	display: block;
 	width: 100%;
-	max-width: 17rem;
+	max-width: 15rem;
 	height: auto;
 }
 
-/* .card__text {
+.card__text {
 	padding-top: 7rem;
-} */
+}
 
 .content__item {
 	padding-top: 1rem;
@@ -87,11 +89,14 @@ h1{
 	background: transparent;
 	margin-bottom: 1rem;
 	padding: 0.2rem;
-	font-size:16px;
+	font-size: 0.875rem;
 	font-family: 'Kumbh Sans', sans-serif;
 	text-align: left;
 }
-
+h1{
+	text-align: center;
+	font-size: 30px;
+}
 .content__question.open {
 	font-weight: 700;
 }
@@ -152,10 +157,9 @@ h1{
 	body {
 		padding: 5rem;
 	}
-    h1{
-font-weight: 700;
-text-align: left;
-    }
+h1{
+	text-align: left;
+}
 	.card {
 		position: relative;
 		display: flex;
