@@ -19,13 +19,14 @@ body {
 	color: var(--text-blue);
 }
 
-h1,h2,h3 {
+h2,h3 {
 	margin-top: 0;
 }
 h1{
     text-align: center;
     font-size: 30px;
     font-weight: 700;
+	margin-top: -44px;
 }
 
 .card {
@@ -41,10 +42,9 @@ h1{
 
 .card__box {
 	/* display: none; */
-    position: relative;
-    top: -105px;
-    left: 84px;
-    width: 121px;
+	position: fixed;
+    top: 112px;
+    left: 22px;
     height: 117px;
     z-index: 1;
 
@@ -54,9 +54,9 @@ h1{
 	position: relative;
 }
 
-.card__image img {
-	position: absolute;
-	top: -17.8rem;
+.woman {
+	position: fixed;
+    top: 2.2rem;
 	left: 50%;
 	transform: translateX(-50%);
 	display: block;
@@ -154,6 +154,7 @@ h1{
 	}
     h1{
 font-weight: 700;
+text-align: left;
     }
 	.card {
 		position: relative;
