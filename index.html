@@ -1,115 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="image__wrapper">
+            <div class="image__wrapper_inner">
 
-		<title>Frontend Mentor | FAQ content Card</title>
+            </div>
+            <img class="box" src="/images/illustration-box-desktop.svg">
+        </div>
+    <div class="accordion__wrapper">
+        <h1 class="title__accordion">FAQ</h1>
+        <div class="questions__accordions">
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        How many team members can I invite?
+                    </h3>
+                    <img src="/images/icon-arrow-down.svg" >
+                </div>
+                <div class="answer">
+                    You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+                </div>
+            </div>
 
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        What is the maximum file upload size?
+                    </h3>
+                    <img src="/images/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    No more than 2GB. All files in your account must fit your allotted storage space.
+                </div>
+            </div>
 
-		<link rel="stylesheet" href="style.css" />
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        How do I reset my password?
+                    </h3>
+                    <img src="/images/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+                </div>
+            </div>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
-	</head>
-	<body>
-		<section class="card">
-			<img
-				src="/images/illustration-box-desktop.svg"
-				alt="card box"
-				class="card__box"
-			/>
-			<div class="card__image">
-				<img
-					src="/images/illustration-woman-online-desktop.svg"
-					alt="woman online desktop"
-				/>
-			</div>
-			<div class="card__text">
-				<h1>FAQ</h1>
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        Can I cancel my subscription?
+                    </h3>
+                    <img src="/images/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    Yes! Send us a message and we’ll process your request no questions asked.
+                </div>
+            </div>
+            
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        Do you provide additional support?
+                    </h3>
+                    <img src="/images/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </div>
+            </div>
 
-				<div class="content">
-					<div class="content__item">
-						<button class="content__question">
-							How many team members can I invite?
-						</button>
-						<div class="content__collapse collapse">
-							<div class="content__content">
-								You can invite up to 2 additional users on the Free plan. There
-								is no limit on team members for the Premium plan.
-							</div>
-						</div>
-					</div>
-					<div class="content__item">
-						<button class="content__question">
-							What is the maximum file upload size?
-						</button>
-						<div class="content__collapse collapse">
-							<div class="content__content">
-								No more than 2GB. All files in your account must fit your
-								allotted storage space.
-							</div>
-						</div>
-					</div>
-					<div class="content__item">
-						<button class="content__question">
-							How do I reset my password?
-						</button>
-						<div class="content__collapse collapse">
-							<div class="content__content">
-								Click “Forgot password” from the login page or “Change password”
-								from your profile page. A reset link will be emailed to you.
-							</div>
-						</div>
-					</div>
-					<div class="content__item">
-						<button class="content__question">
-							Can I cancel my subscription?
-						</button>
-						<div class="content__collapse collapse">
-							<div class="content__content">
-								Yes! Send us a message and we’ll process your request no
-								questions asked.
-							</div>
-						</div>
-					</div>
-					<div class="content__item">
-						<button class="content__question">
-							Do you provide additional support?
-						</button>
-						<div class="content__collapse collapse">
-							<div class="content__content">
-								Chat and email support is available 24/7. Phone lines are open
-								during normal business hours.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<script src="app.js"></script>
-	</body>
+        </div>
+    </div>
+    </main>
+   
+    
+    <script src="app.js"></script>
+</body>
 </html>
