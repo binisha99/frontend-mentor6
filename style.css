@@ -41,7 +41,7 @@ body {
   background-position: 1260% 65%;
 }
 
-.question-answer__accordion > .answer {
+ .answer {
   display: none;
 }
 
